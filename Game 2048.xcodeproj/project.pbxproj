@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2255AE91F88F0D7002E9CD3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AE81F88F0D7002E9CD3 /* Tile.swift */; };
+		D2255AEA1F88F0D7002E9CD3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AE81F88F0D7002E9CD3 /* Tile.swift */; };
+		D2255AEB1F88F0D7002E9CD3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AE81F88F0D7002E9CD3 /* Tile.swift */; };
+		D2255AED1F88F0F0002E9CD3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AEC1F88F0F0002E9CD3 /* Board.swift */; };
+		D2255AEE1F88F0F0002E9CD3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AEC1F88F0F0002E9CD3 /* Board.swift */; };
+		D2255AEF1F88F0F0002E9CD3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AEC1F88F0F0002E9CD3 /* Board.swift */; };
+		D2255AF11F88F131002E9CD3 /* BoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AF01F88F131002E9CD3 /* BoardVC.swift */; };
+		D2255AF21F88F131002E9CD3 /* BoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AF01F88F131002E9CD3 /* BoardVC.swift */; };
+		D2255AF31F88F131002E9CD3 /* BoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2255AF01F88F131002E9CD3 /* BoardVC.swift */; };
 		D23AB6081F88E9BD004FD3CD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB6071F88E9BD004FD3CD /* Enums.swift */; };
 		D23AB6091F88E9BD004FD3CD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB6071F88E9BD004FD3CD /* Enums.swift */; };
 		D23AB60A1F88E9BD004FD3CD /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AB6071F88E9BD004FD3CD /* Enums.swift */; };
@@ -46,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2255AE81F88F0D7002E9CD3 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		D2255AEC1F88F0F0002E9CD3 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		D2255AF01F88F131002E9CD3 /* BoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardVC.swift; sourceTree = "<group>"; };
 		D23AB6071F88E9BD004FD3CD /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		D27325C41F88E4D900ADB4AF /* Game 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game 2048.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27325C71F88E4D900ADB4AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2255AF61F88F18B002E9CD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D27325C71F88E4D900ADB4AF /* AppDelegate.swift */,
+				D27325D31F88E4D900ADB4AF /* Info.plist */,
+				D27325CE1F88E4D900ADB4AF /* Assets.xcassets */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D23AB6041F88E8D8004FD3CD /* Board Engine */ = {
 			isa = PBXGroup;
 			children = (
+				D2255AF01F88F131002E9CD3 /* BoardVC.swift */,
+				D2255AEC1F88F0F0002E9CD3 /* Board.swift */,
+				D2255AE81F88F0D7002E9CD3 /* Tile.swift */,
 				D2E1F8851F88ED67000C2421 /* Base Constants */,
 			);
 			path = "Board Engine";
@@ -105,16 +130,6 @@
 				D27325D01F88E4D900ADB4AF /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		D23AB6061F88E968004FD3CD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D27325C71F88E4D900ADB4AF /* AppDelegate.swift */,
-				D27325D31F88E4D900ADB4AF /* Info.plist */,
-				D27325CE1F88E4D900ADB4AF /* Assets.xcassets */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D27325BB1F88E4D900ADB4AF = {
@@ -143,7 +158,7 @@
 				D27325C91F88E4D900ADB4AF /* MainVC.swift */,
 				D23AB6041F88E8D8004FD3CD /* Board Engine */,
 				D23AB6051F88E958004FD3CD /* Storyboards */,
-				D23AB6061F88E968004FD3CD /* Supporting Files */,
+				D2255AF61F88F18B002E9CD3 /* Supporting Files */,
 			);
 			path = "Game 2048";
 			sourceTree = "<group>";
@@ -312,10 +327,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D27325CA1F88E4D900ADB4AF /* MainVC.swift in Sources */,
+				D2255AF11F88F131002E9CD3 /* BoardVC.swift in Sources */,
 				D2E1F8821F88ECB8000C2421 /* BoardConfiguration.swift in Sources */,
 				D23AB6081F88E9BD004FD3CD /* Enums.swift in Sources */,
+				D2255AE91F88F0D7002E9CD3 /* Tile.swift in Sources */,
 				D2F9CEF11F88EB7300EB2629 /* Position.swift in Sources */,
 				D27325C81F88E4D900ADB4AF /* AppDelegate.swift in Sources */,
+				D2255AED1F88F0F0002E9CD3 /* Board.swift in Sources */,
 				D2F9CEF51F88EBA800EB2629 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,8 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23AB6091F88E9BD004FD3CD /* Enums.swift in Sources */,
+				D2255AF21F88F131002E9CD3 /* BoardVC.swift in Sources */,
 				D27325DD1F88E4D900ADB4AF /* Game_2048Tests.swift in Sources */,
 				D2F9CEF21F88EB7300EB2629 /* Position.swift in Sources */,
+				D2255AEA1F88F0D7002E9CD3 /* Tile.swift in Sources */,
+				D2255AEE1F88F0F0002E9CD3 /* Board.swift in Sources */,
 				D2E1F8831F88ECB8000C2421 /* BoardConfiguration.swift in Sources */,
 				D2F9CEF61F88EBA800EB2629 /* Styles.swift in Sources */,
 			);
@@ -337,8 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23AB60A1F88E9BD004FD3CD /* Enums.swift in Sources */,
+				D2255AF31F88F131002E9CD3 /* BoardVC.swift in Sources */,
 				D27325E81F88E4D900ADB4AF /* Game_2048UITests.swift in Sources */,
 				D2F9CEF31F88EB7300EB2629 /* Position.swift in Sources */,
+				D2255AEB1F88F0D7002E9CD3 /* Tile.swift in Sources */,
+				D2255AEF1F88F0F0002E9CD3 /* Board.swift in Sources */,
 				D2E1F8841F88ECB8000C2421 /* BoardConfiguration.swift in Sources */,
 				D2F9CEF71F88EBA800EB2629 /* Styles.swift in Sources */,
 			);
